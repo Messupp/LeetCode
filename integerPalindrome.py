@@ -103,18 +103,16 @@ class Solution(object):
 		neg = findNegativePalindrome(n)
 		pos = int(pos)
 		neg = int(neg)
-
-		print(pos, neg)
 		posAbs = abs(int(n) - pos)
 		negAbs = abs(int(n) - neg)
 
-		print(posAbs, negAbs)
-
 		if posAbs > negAbs:
+			print(n, "closest palindrome is", neg)
 			return neg
 		else:
+			print(n, "closest palindrome is", pos)
 			return pos
 
 
 
-Solution.run("", "555")
+Solution.run("", "38957593")
